@@ -1,10 +1,249 @@
----
-layout: default
-title: "Home"
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vaishnavi Vuyyuru</title>
+  <meta name="description" content="Portfolio + creative playground of Vaishnavi Vuyyuru." />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">vaishnavi vuyyuru</a>
+
+      <nav class="links">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#play">Play</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="assets/Vaishnavi_Vuyyuru_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="kicker">Product · Analytics · Creative energy</p>
+
+        <h1>
+          I build data-informed products and tell clear stories —
+          with a soft spot for design, systems, and playful projects.
+        </h1>
+
+        <p class="sub">
+          MSA @ Georgia Tech · Product/Analytics · Interested in revenue, operations, and human-centered tools.
+          This is my portfolio + a small corner of what I’m exploring.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn ghost" href="#contact">Let’s connect</a>
+        </div>
+
+        <div class="tags">
+          <!-- replace these -->
+          <span>Product Strategy</span>
+          <span>Experimentation</span>
+          <span>Forecasting</span>
+          <span>Optimization</span>
+          <span>Dashboards</span>
+          <span>Storytelling</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK / EXPERIENCE -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>Work</h2>
+        <p>Selected experiences. Keep this tight and impact-first.</p>
+      </div>
+
+      <div class="cards">
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="card-top">
+            <h3>Role / Company</h3>
+            <p class="meta">Dates · Location</p>
+          </div>
+          <p class="desc">
+            1–2 sentence summary of what you owned and why it mattered.
+          </p>
+          <ul class="bullets">
+            <li>Impact bullet with metric (ex: improved X by Y%).</li>
+            <li>Cross-functional / stakeholder bullet.</li>
+            <li>Systems/process/design thinking bullet.</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">SQL</span>
+            <span class="chip">Python</span>
+            <span class="chip">Tableau</span>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <div class="card-top">
+            <h3>Role / Organization</h3>
+            <p class="meta">Dates · Location</p>
+          </div>
+          <p class="desc">
+            1–2 sentence summary. What did you ship, improve, or learn?
+          </p>
+          <ul class="bullets">
+            <li>Bullet 1</li>
+            <li>Bullet 2</li>
+            <li>Bullet 3</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">Product</span>
+            <span class="chip">Analytics</span>
+            <span class="chip">Research</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Product/portfolio projects. Link to a write-up or repo.</p>
+      </div>
+
+      <div class="grid">
+        <!-- PROJECT -->
+        <a class="tile" href="#" target="_blank" rel="noreferrer">
+          <div class="thumb">
+            <!-- Optional: put an image in /assets and swap the div for <img> -->
+            <div class="thumb-placeholder">Add image</div>
+          </div>
+          <div class="tile-body">
+            <h3>Project title</h3>
+            <p class="tile-desc">One-liner: what it is + the outcome.</p>
+            <div class="chip-row">
+              <span class="chip">Forecasting</span>
+              <span class="chip">XGBoost</span>
+              <span class="chip">Storytelling</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="tile" href="#" target="_blank" rel="noreferrer">
+          <div class="thumb"><div class="thumb-placeholder">Add image</div></div>
+          <div class="tile-body">
+            <h3>Project title</h3>
+            <p class="tile-desc">What problem you solved + how.</p>
+            <div class="chip-row">
+              <span class="chip">Optimization</span>
+              <span class="chip">Gurobi</span>
+              <span class="chip">Modeling</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="tile" href="#" target="_blank" rel="noreferrer">
+          <div class="thumb"><div class="thumb-placeholder">Add image</div></div>
+          <div class="tile-body">
+            <h3>Project title</h3>
+            <p class="tile-desc">One-liner with a tangible result.</p>
+            <div class="chip-row">
+              <span class="chip">Dashboard</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Design</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- PLAY: PERSONAL + CREATIVE -->
+    <section class="section" id="play">
+      <div class="section-head">
+        <h2>Play</h2>
+        <p>Creative energy: hobbies, experiments, photos, “what I’m into.”</p>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Currently into</h3>
+          <ul class="list">
+            <li>📷 Photography (add a link to a folder/IG if you want)</li>
+            <li>🎧 Playlists / music</li>
+            <li>💃 Dance + performance</li>
+            <li>📚 Reading queue</li>
+            <li>🧪 Tiny experiments & prototypes</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Photo grid (optional)</h3>
+          <div class="photo-grid">
+            <div class="photo ph">Add</div>
+            <div class="photo ph">Add</div>
+            <div class="photo ph">Add</div>
+            <div class="photo ph">Add</div>
+            <div class="photo ph">Add</div>
+            <div class="photo ph">Add</div>
+          </div>
+          <p class="hint">Tip: replace each “Add” with an &lt;img&gt; in /assets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="section" id="writing">
+      <div class="section-head">
+        <h2>Writing</h2>
+        <p>Short pieces. Could be Google Docs, Notion, Medium, or GitHub.</p>
+      </div>
+
+      <div class="posts">
+        <a class="post" href="#" target="_blank" rel="noreferrer">
+          <div>
+            <h3>Post title</h3>
+            <p>1–2 sentence description of what someone will learn.</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="post" href="#" target="_blank" rel="noreferrer">
+          <div>
+            <h3>Post title</h3>
+            <p>Optional: “Why I built X” / “How I approached Y.”</p>
+          </div>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Drop your links here.</p>
+      </div>
+
+      <div class="contact">
+        <a class="btn ghost" href="mailto:YOUR_EMAIL_HERE">Email</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> vaishnavi vuyyuru · built on github pages</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
